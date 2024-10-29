@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verona - Cocina & Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú principal -->
+        <div class="menu" id="menu">
+            <a href="#" class="button" onclick="navigateTo('cafeteria')">Cafetería</a>
+            <a href="#" class="button" onclick="navigateTo('carta-principal')">Carta Principal</a>
+            <a href="#" class="button" onclick="navigateTo('milanesas')">Milanesas y Ensaladas</a>
+            <a href="#" class="button" onclick="navigateTo('pizzas')">Pizzas</a>
+            <a href="#" class="button" onclick="navigateTo('bebidas')">Bebidas</a>
+        </div>
+
+        <!-- Secciones de Carta -->
+        <section id="cafeteria" class="menu-section">
+            <div class="content">
+                <h3>Cafetería</h3>
+                <button class="btn btn-secondary" onclick="backToMenu()">Volver</button>
+                <img src="imagenes/2.png" alt="Cafetería" class="img-fluid">
+                <img src="imagenes/2.png" alt="Cafetería" class="img-fluid">
+            </div>
+        </section>
+
+        <section id="carta-principal" class="menu-section">
+            <div class="content">
+                <h3>Carta Principal</h3>
+                <button class="btn btn-secondary" onclick="backToMenu()">Volver</button>
+                <img src="imagenes/2.png" alt="Carta Principal" class="img-fluid">
+            </div>
+        </section>
+
+        <section id="milanesas" class="menu-section">
+            <div class="content">
+                <h3>Milanesas y Ensaladas</h3>
+                <button class="btn btn-secondary" onclick="backToMenu()">Volver</button>
+                <img src="imagenes/desayuno3.png" alt="Milanesas y Ensaladas" class="img-fluid">
+            </div>
+        </section>
+
+        <section id="pizzas" class="menu-section">
+            <div class="content">
+                <h3>Pizzas</h3>
+                <button class="btn btn-secondary" onclick="backToMenu()">Volver</button>
+                <img src="imagenes/desayuno6.png" alt="Pizzas" class="img-fluid">
+            </div>
+        </section>
+
+        <section id="bebidas" class="menu-section">
+            <div class="content">
+                <h3>Bebidas</h3>
+                <button class="btn btn-secondary" onclick="backToMenu()">Volver</button>
+                <img src="imagenes/desayuno7.png" alt="Bebidas" class="img-fluid">
+            </div>
+        </section>
+
+        
+    </div>
+    
+    <!-- Contacto -->
+    <div class="contact">
+        <p>Contáctanos:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Verona - Cocina & Café. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
