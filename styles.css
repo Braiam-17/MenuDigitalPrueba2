@@ -6,48 +6,48 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Estructura del body con Flexbox */
-html, body {
-    height: 100%;
+/* Estilo del body */
+body {
+    background-image: url('imagenes/Untitled Project.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Centramos el contenedor principal */
+/* Contenedor principal */
 .container {
-    flex: 1; /* Ocupa el espacio restante entre el header (si hubiera) y el footer */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
     display: flex;
-    
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
-    color: white;
-    margin: auto; /* Asegura que el contenedor se mantenga centrado en pantallas más grandes */
-    gap: 20px; /* Espacio entre secciones */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido en la sección .container */
 }
 
-/* Estilo del body */
-body {
-    background-image: url('imagenes/Untitled\ Project.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Para que la imagen de fondo se quede fija al hacer scroll */
+/* Menú principal */
+.menu {
+    margin-top: 150px;
 }
 
-/* Botones del menú */
 .menu .button {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
     text-decoration: none;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-    width: 100%; /* Asegura que los botones sean del ancho completo del contenedor */
+    width: 100%;
     max-width: 300px;
 }
 
@@ -55,13 +55,12 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* Ocultar secciones por defecto */
+/* Ocultar secciones del menú por defecto */
 .menu-section {
     display: none;
     padding: 50px 0;
 }
 
-/* Imagen responsiva */
 img {
     width: 100%;
     height: auto;
@@ -69,15 +68,24 @@ img {
 
 /* Sección de contacto */
 .contact {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin: 50px 0 0px; /* Aumentar espacio superior para ubicar más abajo */
+    padding: 15px; /* Reducir espaciado interno */
 }
 
+/* Título de contacto */
+.contact p {
+    font-family: "Black Ops One", system-ui; /* Utiliza la fuente Black Ops One */
+    font-style: normal;
+    margin-bottom: 20px; /* Espacio debajo del texto */
+    font-weight: 790; /* Texto en negrita */
+    color: rgb(0, 0, 0); /* Asegurar que el texto sea blanco */
+}
+
+/* Íconos de redes sociales */
 .social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
+    color: #ffcc00; /* Cambiar color de los íconos */
+    margin: 0 10px; /* Ajustar espacio entre íconos */
+    font-size: 1.8rem; /* Reducir tamaño de los íconos */
     transition: transform 0.3s;
 }
 
@@ -87,11 +95,10 @@ img {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 0.8rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     opacity: 0.8;
-    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    margin-top: 20px;
 }
