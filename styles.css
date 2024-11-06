@@ -32,6 +32,19 @@ body {
     justify-content: center; /* Centra verticalmente el contenido en la sección .container */
 }
 
+/* Estilo para el botón Volver */
+.btn.btn-secondary {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    padding: 1px 2px; /* Ajusta el padding para agrandar el botón */
+    background-color: #f13434; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto a blanco */
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Añade un borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 15px;
+}
+
 /* Menú principal */
 .menu {
     margin-top: 150px;
@@ -79,6 +92,7 @@ img {
     margin-bottom: 20px; /* Espacio debajo del texto */
     font-weight: 790; /* Texto en negrita */
     color: rgb(0, 0, 0); /* Asegurar que el texto sea blanco */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Íconos de redes sociales */
