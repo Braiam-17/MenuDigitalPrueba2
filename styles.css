@@ -74,9 +74,31 @@ body {
     padding: 50px 0;
 }
 
+/* Estilos específicos para la sección #tostados */
+#tostados .content {
+    background-color: #e2cd98; 
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px 0; /* Espaciado superior e inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos globales para el h3 */
+h3 {
+    font-size: 2.5rem; /* Tamaño de fuente aumentado */
+    color: #333333; /* Color del texto */
+    font-family: "Black Ops One", sans-serif; /* Fuente personalizada */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Sombra para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    background-color: #e2cd98;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Imágenes */
 img {
     width: 100%;
     height: auto;
+    padding: 0;
 }
 
 /* Sección de contacto */
@@ -95,6 +117,7 @@ img {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* Íconos de redes sociales */
 .social-icons a {
     color: #2bff00; /* Color del ícono */
     background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con 60% de transparencia */
@@ -109,7 +132,6 @@ img {
     transform: scale(1.2);
     background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el cursor */
 }
-
 
 /* Footer */
 footer {
