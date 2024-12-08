@@ -91,21 +91,25 @@ img {
     font-style: normal;
     margin-bottom: 20px; /* Espacio debajo del texto */
     font-weight: 790; /* Texto en negrita */
-    color: rgb(0, 0, 0); /* Asegurar que el texto sea blanco */
-    background-color: rgba(255, 255, 255, 0.8);
+    color: whitesmoke; /* Asegurar que el texto sea blanco */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Íconos de redes sociales */
 .social-icons a {
-    color: #ffcc00; /* Cambiar color de los íconos */
-    margin: 0 10px; /* Ajustar espacio entre íconos */
-    font-size: 1.8rem; /* Reducir tamaño de los íconos */
-    transition: transform 0.3s;
+    color: #2bff00; /* Color del ícono */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con 60% de transparencia */
+    padding: 10px; /* Ajusta este valor según el tamaño que desees */
+    border-radius: 10%; /* Hace que el fondo sea circular */
+    margin: 0 10px;
+    font-size: 2rem;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .social-icons a:hover {
     transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el cursor */
 }
+
 
 /* Footer */
 footer {
